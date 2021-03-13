@@ -47,6 +47,17 @@ body h1{
     font-weight: 700;
 }
 
+body h4{
+    font-size: $txt-sml;
+    font-weight: 500;
+}
+
+body span{
+    font-size: $txt-sml;
+    font-weight: 500;
+}
+
+
 /*********************** Form ***********************/
 body .tank-form{
     margin-left: 20%;

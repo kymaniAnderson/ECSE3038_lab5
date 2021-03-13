@@ -8,25 +8,22 @@
         
         <!------------------     Title    ------------------>
         <title>Supah Tanks</title>
-        <link rel = "icon" href = "static/assets/tank-logo.png" type = "image/x-icon"> 
+        <link rel = "icon" href = "assets/tank-logo.png" type = "image/x-icon"> 
 
         <!------------------     Style-Sheet    ------------------>
-        <link rel="stylesheet" href="static/css/style.css">
-
-        <!------------------     Font-Awesome    ------------------>
-        <script src="https://kit.fontawesome.com/83715fa62b.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <!------------------     Logo    ------------------>
         <div class="logo">
-            <img src="static/assets/tank-banner.svg" alt="tank logo">
+            <img src="assets/tank-banner.svg" alt="tank logo">
         </div>
         
         <h1>Form</h1>
         <!------------------     Form    ------------------>
         <div class="tank-form">
-            <form>
+            <form method="POST" action="/data">
                
                 <div class="form-group">
                     <label for="location">Location</label>
@@ -57,21 +54,11 @@
 
         <h1>Tanks</h1>
         <!------------------     Cards    ------------------>
-        <div class="tank-cards">
-            <div class="card-content">
-                <h4>Location: </h4>
-                <h4>Latitude: </h4>
-                <h4>Longitude: </h4>
-                <h4>Percentage Full: </h4>
-            </div>
+        <div class="container"></div>
+        
 
-            <button>Delete</button>
-
-        </div>
-            
-        </div>
         <!------------------     Javascript    ------------------>
-        <script type="text/javascript" src="script.js" ></script>  
+        <script type="text/javascript" src="script.js"></script>  
     </body> 
 
 </html>
