@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!------------------     Boiler Plate    ------------------>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!------------------     Title    ------------------>
+        <title>Supah Tanks</title>
+        <link rel = "icon" href = "static/assets/tank-logo.png" type = "image/x-icon"> 
+
+        <!------------------     Style-Sheet    ------------------>
+        <link rel="stylesheet" href="static/css/style.css">
+
+        <!------------------     Font-Awesome    ------------------>
+        <script src="https://kit.fontawesome.com/83715fa62b.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!------------------     Logo    ------------------>
+        <div class="logo">
+            <img src="static/assets/tank-banner.svg" alt="tank logo">
+        </div>
+        
+        <h1>Form</h1>
+        <!------------------     Form    ------------------>
+        <div class="tank-form">
+            <form>
+               
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" name="location" id="location" placeholder="Location Description"> 
+                </div>
+                
+                <div class="form-group">
+                    <label for="latitude">Latitude</label>
+                    <input type="text" name="latitude" id="latitude" placeholder="Latitude"> 
+                </div>
+
+                <div class="form-group">
+                    <label for="longitude">Longitude</label>
+                    <input type="text" name="longitude" id="longitude" placeholder="Longitude"> 
+                </div>
+
+                <div class="form-group">
+                    <label for="percentage_full">Percentage Full</label>
+                    <input type="number" name="percentage_full" id="percentage_full" placeholder="Percentage Full"> 
+                </div>
+
+                <div class="form-action">
+                    <input type="submit" value="Submit" id="tank-submit">
+                </div>
+
+            </form>
+        </div>
+
+        <h1>Tanks</h1>
+        <!------------------     Cards    ------------------>
+        <div class="tank-cards">
+            <div class="card-content">
+                <h4>Location: </h4>
+                <h4>Latitude: </h4>
+                <h4>Longitude: </h4>
+                <h4>Percentage Full: </h4>
+            </div>
+
+            <button>Delete</button>
+
+        </div>
+            
+        </div>
+        <!------------------     Javascript    ------------------>
+        <script type="text/javascript" src="script.js" ></script>  
+    </body> 
+
+</html>
