@@ -1,13 +1,11 @@
 //POST
 document.getElementById("tank-submit").addEventListener("click", function(event){
     event.preventDefault();
-    let form = document.forms.tankForm;
-    let formData = new FormData(form);
     
-    let location = formData.get('location');
-    let latitude = formData.get('latitude');
-    let longitude = formData.get('longitude');
-    let percentage_full = formData.get('percentage_full');
+    let location = document.getElementById("location").value;
+    let latitude = document.getElementById("latitude").value;
+    let longitude = document.getElementById("longitude").value;
+    let percentage_full = document.getElementById("percentage_full").value;
 
     let jsonBody = {
         "location": location,
@@ -71,25 +69,21 @@ function createTankCard(tank){
     
     //Percentage Full:
     var tankLabelPercentageFull = document.createElement("H4");
-    tankPercentageFull.classList.add("percentageFull-label");
+    tankLabelPercentageFull.classList.add("percentageFull-label");
     tankLabelPercentageFull.innerHTML = "Percentage Full: ";
 
     var tankValuePercentageFull = document.createElement("SPAN");
     tankValuePercentageFull.classList.add("percentageFull-value");
     tankValuePercentageFull.innerHTML = tank.percentage_full;
 
-    tankLabelLongitude.append(tankValueLongitude);
-    
-    //Button
-    var tankCardButton = document.createElement("BUTTON");
-    tankCardButton.innerHTML = "Delete";
+    tankLabelPercentageFull.append(tankValuePercentageFull);
     
     tankContentCardDiv.append(tankLabelLocation);
     tankContentCardDiv.append(tankLabelLatitude);
     tankContentCardDiv.append(tankLabelLongitude);
     tankContentCardDiv.append(tankLabelPercentageFull);
 
-    tankCardDiv.append( tankContentCardDiv);
+    tankCardDiv.append(tankContentCardDiv);
 
     return tankCardDiv;
 }
