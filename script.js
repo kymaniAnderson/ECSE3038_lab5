@@ -23,9 +23,12 @@ document.getElementById("tank-submit").addEventListener("click", function(event)
     })
     .then((res) => res.json)
     .then((json) => console.log(json));
+
+    var container = document.querySelector(".container");
+    container.append(createTankCard(jsonBody));
 });
 
-//GET --> Create Cards
+//Create Cards
 function createTankCard(tank){
     //Card Container:
     var tankCardDiv = document.createElement("DIV");
